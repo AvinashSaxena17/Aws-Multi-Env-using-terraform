@@ -21,8 +21,8 @@ This repository contains Terraform modules for provisioning and managing AWS inf
 --
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/AvinashSaxena17/Terraform_Projects.git
-cd Terraform_Projects
+git clone https://github.com/AvinashSaxena17/Aws-Multi-Env-using-terraform.git
+cd Aws-Multi-Env-using-terraform
 ```
 2. **Configure the variables**: Update the variables in the `variables.tf` files according to your environment (e.g., update the SSH key path in the `aws_key_pair` resource).
 3. **Generate the SSH key**: Use the command `ssh-keygen` to generate a key to connect the aws.
