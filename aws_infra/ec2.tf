@@ -1,7 +1,7 @@
 #key -Pair for login
 resource aws_key_pair my_key{
     key_name = "demo-${var.env}-key-pair"
-    public_key = file("YOUR_SSHKEY_PATH")
+    public_key = file("YOUR_SSH_KEY_PATH")
 
 tags = {
   Name="${var.env}-infra"
