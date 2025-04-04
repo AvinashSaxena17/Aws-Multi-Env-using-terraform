@@ -1,0 +1,4 @@
+.\aws_infra\.terraform.lock.hcl
+.terraform.lock.hcl
+terrainfra_key
+terrainfra_key.pub
