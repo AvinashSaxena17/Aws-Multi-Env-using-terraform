@@ -1,5 +1,5 @@
 module "dev-infra" {
-    source = "./terraform_infra"
+    source = "./aws_infra"
     env = "dev"
     ami = "ami-0e35ddab05955cf57"
     instance_type = "t2.micro"
@@ -9,7 +9,7 @@ module "dev-infra" {
 }
 
 module "stg-infra" {
-    source = "./terraform_infra"
+    source = "./aws_infra"
     env = "stg"
     ami = "ami-0e35ddab05955cf57"
     instance_type = "t2.nano"
@@ -19,7 +19,7 @@ module "stg-infra" {
 }
 
 module "prod-infra" {
-    source = "./terraform_infra"
+    source = "./aws_infra"
     env = "prod"
     ami = "ami-0e35ddab05955cf57"
     instance_type = "t2.micro"
