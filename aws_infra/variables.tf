@@ -19,7 +19,3 @@ variable "instance_count" {
   
 }
 
-variable "bucket_name" {
-    type = string
-  
-}
