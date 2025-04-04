@@ -4,7 +4,7 @@ resource aws_key_pair my_key{
     public_key = file("YOUR_SSH_KEY_PATH")
 
 tags = {
-  Name="${var.env}-infra"
+  Name="${var.env}-multi_infra"
 }
 
 }
@@ -39,7 +39,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_http" {
   ip_protocol       = "tcp"
   to_port           = 80
 tags = {
-  Name="${var.env}-infra"
+  Name="${var.env}-multi_infra"
 }
 
 
@@ -54,7 +54,7 @@ resource "aws_vpc_security_group_egress_rule" "allow_outbound_rules" {
   to_port = 0
 
 tags = {
-  Name="${var.env}-infra"
+  Name="${var.env}-multi_infra"
 }
 
   
@@ -78,7 +78,7 @@ tags = {
       }
     
     tags = {
-      Name="${var.env}-infra"
+      Name="${var.env}-multi_infra"
     }
   }
 
